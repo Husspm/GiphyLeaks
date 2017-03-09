@@ -1,11 +1,10 @@
 $(document).ready(function() {
     //creating an array to contain all possible options
     //will eventually add the ability for users to add to this array via text input
-    var topics = ["leek", "onion", "tomato", "carrots", "broccoli", "jalapenos", "potato"];
+    var topics = ["leek", "onion", "tomato", "carrots", "broccoli", "corn", "potato"];
     //using a for loop to generate buttons accoring to the number of items in topics
     function makeButtons() {
         $(".buttonDiv").empty();
-        $("#add-item").html("");
         for (index = 0; index < topics.length; index++) {
             var buttonCreate = $("<button>").addClass("options");
             buttonCreate.attr("data-name", topics[index]);
@@ -28,6 +27,7 @@ $(document).ready(function() {
             })
             .done(function(response) {
                 results = response.data;
+                console.log(results);
                 for (i = 0; i < results.length; i++) {
                     var wrap = $("<div>").addClass("wrapper");
                     var imageView = $("<img>").attr("data-index", i);
@@ -55,6 +55,7 @@ $(document).ready(function() {
     $("#sub-button").on("click", function(event) {
         event.preventDefault();
         var itemToAdd = $("#add-item").val().trim().toLowerCase();
+        $("#add-item").val("");
         if (itemToAdd.length > 0 && topics.indexOf(itemToAdd) === -1) {
             topics.push(itemToAdd);
             makeButtons();

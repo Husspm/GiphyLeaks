@@ -19,9 +19,11 @@ h1,
 ul,
 li {
     display: inline;
+    font-size: 18px;
 }
 
 li {
+    text-decoration: underline;
     margin-left: 20px;
 }
 
