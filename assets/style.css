@@ -9,12 +9,7 @@ form {
     background-color: white;
 }
 
-p {
-    display: inline;
-    color: black;
-    font-size: 14px;
-}
-
+p,
 h1,
 ul,
 li {
