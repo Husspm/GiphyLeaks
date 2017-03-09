@@ -1,5 +1,6 @@
 body {
     background-color: black;
+    background-size: contain;
     color: white;
 }
 
@@ -7,7 +8,9 @@ body {
     font-size: 80px;
 }
 
-.options {
+.options,
+#add-item,
+#sub-button {
     margin: 20px;
     padding: 20px;
     background-color: black;
@@ -16,4 +19,9 @@ body {
 
 .imagesDiv {
     margin: 20px;
+}
+
+.wrapper {
+    display: inline-block;
+    margin: 10px;
 }
