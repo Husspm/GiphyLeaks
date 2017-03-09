@@ -1,11 +1,39 @@
 body {
     background-color: black;
-    background-size: contain;
+    font-family: "Arial";
+    font-weight: bold;
     color: white;
 }
 
+form {
+    background-color: white;
+}
+
+p {
+    display: inline;
+    color: black;
+    font-size: 14px;
+}
+
+h1,
+li {
+    display: inline;
+}
+
+li {
+    margin-left: 20px;
+}
+
+.navbar {
+    padding: 5px 10px;
+    background-color: white;
+    color: black;
+}
+
 .line1 {
-    font-size: 80px;
+    font-family: "Helvetica Neue";
+    font-size: 40px;
+    font-weight: normal;
 }
 
 .options,

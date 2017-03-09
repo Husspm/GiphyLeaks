@@ -32,7 +32,7 @@ $(document).ready(function() {
                     var wrap = $("<div>").addClass("wrapper");
                     var imageView = $("<img>").attr("data-index", i);
                     var imageRating = $("<h2>");
-                    imageRating.html("Rating : " + results[i].rating);
+                    imageRating.html("Classification : " + results[i].rating);
                     imageView.attr("src", results[i].images.fixed_height_still.url);
                     wrap.append(imageRating, imageView);
                     $(".imagesDiv").append(wrap);
